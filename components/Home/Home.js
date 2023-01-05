@@ -75,7 +75,7 @@ function Welcome() {
                 {
                     mainStages.map(stage => {
                         return(
-                            <Box>
+                            <Box key = {`${stage}-box`}>
                                 {stage}
                             </Box>    
                         )
@@ -89,7 +89,7 @@ function Welcome() {
                         {   
                             [...Array(subStages[0].Count)].map(n =>{
                                 return(
-                                    <TimeLineBlock color = {subStages[0].Color}  />
+                                    <TimeLineBlock color = {subStages[0].Color}  key = {`${n}${subStages[0].color}`} />
                                 )
                             })
                         }
@@ -102,7 +102,7 @@ function Welcome() {
                         {   
                             [...Array(subStages[1].Count)].map(n =>{
                                 return(
-                                    <TimeLineBlock color = {subStages[1].Color}  />
+                                    <TimeLineBlock color = {subStages[1].Color}   key = {`${n}${subStages[1].color}`}/>
                                 )
                             })
                         }
@@ -115,7 +115,7 @@ function Welcome() {
                         {   
                             [...Array(subStages[2].Count)].map(n =>{
                                 return(
-                                    <TimeLineBlock color = {subStages[2].Color}  />
+                                    <TimeLineBlock color = {subStages[2].Color} key = {`${n}${subStages[2].color}`}  />
                                 )
                             })
                         }
@@ -128,7 +128,7 @@ function Welcome() {
                         {   
                             [...Array(subStages[3].Count)].map(n =>{
                                 return(
-                                    <TimeLineBlock color = {subStages[3].Color}  />
+                                    <TimeLineBlock color = {subStages[3].Color}  key = {`${n}${subStages[3].color}`} />
                                 )
                             })
                         }
@@ -141,7 +141,7 @@ function Welcome() {
                         {   
                             [...Array(subStages[4].Count)].map(n =>{
                                 return(
-                                    <TimeLineBlock color = {subStages[4].Color}  />
+                                    <TimeLineBlock color = {subStages[4].Color}   key = {`${n}${subStages[4].color}`}/>
                                 )
                             })
                         }
@@ -154,7 +154,7 @@ function Welcome() {
                         {   
                             [...Array(subStages[5].Count)].map(n =>{
                                 return(
-                                    <TimeLineBlock color = {subStages[5].Color}  />
+                                    <TimeLineBlock color = {subStages[5].Color}  key = {`${n}${subStages[5].color}`} />
                                 )
                             })
                         }
@@ -167,7 +167,7 @@ function Welcome() {
                         {   
                             [...Array(subStages[6].Count)].map(n =>{
                                 return(
-                                    <TimeLineBlock color = {subStages[6].Color}  />
+                                    <TimeLineBlock color = {subStages[6].Color}   key = {`${n}${subStages[6].color}`} />
                                 )
                             })
                         }
