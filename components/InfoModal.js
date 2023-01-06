@@ -13,7 +13,7 @@ function InfoModal({component,open,handleClose}) {
         boxShadow: 24,
         p: 4,
         opacity : 1,
-
+        overflowY : 'scroll'
       };
 
 
